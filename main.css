@@ -39,3 +39,52 @@ h3 {
 .card img:hover {
   transform: scale(1.2);
 }
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: hsl(25, 30%, 47%);
+}
+form {
+  width: fit-content;
+  margin: 0auto;
+}
+
+label {
+  display: grid;
+  place-items: center;
+  grid-template-areas: 'text';
+  font-size: 1.8rem;
+}
+
+label p {
+  grid-area: text;
+  z-index: 100;
+  animation: labelAnimation 5000ms infinite both;
+  animation-delay: 200ms;
+}
+
+@keyframes labelAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+input {
+  grid-area: text;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 100px;
+  grid-template-rows: 100px;
+  grid-template-areas: 'text';
+}
+
+.grid-container p {
+  grid-area: text;
+}
