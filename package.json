@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style/style.scss:style.css",
+    "dev": "nodemon main.js",
+    "server": "nodemon server.js",
+    "browser": "start firefox http://127.0.0.1:5500/index.html",
+    "start": "npm run browser && npm run sass"
+  },
+  "keywords": [],
+  "author": "albertleipzig <albertclemvill@gmail.com>",
+  "license": "SEE LICENSE IN LICENSE",
+  "dependencies": {
+    "sass": "^1.69.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
