@@ -2,13 +2,6 @@
   font-size: 62.5%;
 }
 
-.clamp {
-  height: 300px;
-  background-color: tomato;
-  width: clamp(300px, 50vw, 750px);
-  margin: 0 auto;
-}
-
 p {
   font-size: 2.1rem;
   line-height: 1.6em;
@@ -23,20 +16,26 @@ h3 {
   font-size: 3rem;
 }
 
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
 .card {
   width: 30vw;
   min-width: 300px;
-  border: 1px solid red;
+  border: 1px solid hsl(0 30% 75%);
 }
+.card__img-container {
+  overflow: hidden;
+}
+/* .card:hover {
+  width: 40vw;
+  transition: 300ms;
+} */
 
 .card img {
   width: 100%;
   aspect-ratio: 16 /9;
   object-fit: cover;
+  transition: 300ms;
+}
+
+.card img:hover {
+  transform: scale(1.2);
 }
