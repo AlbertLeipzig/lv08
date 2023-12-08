@@ -1,3 +1,36 @@
+$primaryColor: #175f24;
+$font-family: 'Arial';
+$font-m: 2.2rem;
+:root {
+  font-size: 62.5%;
+}
 h1 {
   color: turquoise;
+}
+
+@mixin fontBase {
+  font-family: $font-family;
+  font-size: $font-m;
+  color: $primaryColor;
+  line-height: 1.8em;
+}
+
+p {
+  @include fontBase;
+}
+
+a {
+  @include fontBase;
+}
+
+label {
+  @include fontBase;
+}
+
+li {
+  @include fontBase;
+}
+
+button {
+  @include fontBase;
 }
