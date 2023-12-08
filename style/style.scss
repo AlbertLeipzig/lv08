@@ -19,8 +19,18 @@ p {
   @include fontBase;
 }
 
+@mixin states {
+  transition: 300ms;
+  &:hover {
+    color: red;
+  }
+  &:active {
+    background-color: black;
+  }
+}
 a {
   @include fontBase;
+  @include states;
 }
 
 label {
@@ -33,4 +43,5 @@ li {
 
 button {
   @include fontBase;
+  @include states;
 }
